@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Startup Projects</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+    overflow-x:hidden;
+}
+
+/* HEADER */
+
+.projects-header{
+    width:100%;
+    min-height:45vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:40px;
+    background:
+    linear-gradient(rgba(15,23,42,0.85),rgba(15,23,42,0.9)),
+    url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop');
+    background-size:cover;
+    background-position:center;
+}
+
+.projects-header h1{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.projects-header p{
+    max-width:750px;
+    line-height:1.8;
+    color:#cbd5e1;
+    font-size:18px;
+}
+
+/* PROJECT SECTION */
+
+.projects-section{
+    width:100%;
+    padding:80px 8%;
+}
+
+/* GRID */
+
+.projects-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:35px;
+}
+
+/* CARD */
+
+.project-card{
+    background:#1e293b;
+    border-radius:25px;
+    overflow:hidden;
+    transition:0.5s;
+    position:relative;
+    box-shadow:0 10px 30px rgba(0,0,0,0.3);
+}
+
+.project-card:hover{
+    transform:translateY(-15px);
+}
+
+/* IMAGE */
+
+.project-image{
+    width:100%;
+    height:240px;
+    overflow:hidden;
+}
+
+.project-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:0.6s;
+}
+
+.project-card:hover img{
+    transform:scale(1.1);
+}
+
+/* CONTENT */
+
+.project-content{
+    padding:30px;
+}
+
+.project-content h2{
+    margin-bottom:15px;
+    font-size:28px;
+}
+
+.project-content p{
+    color:#cbd5e1;
+    line-height:1.8;
+    margin-bottom:25px;
+}
+
+/* TAGS */
+
+.tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-bottom:25px;
+}
+
+.tags span{
+    background:#334155;
+    padding:8px 14px;
+    border-radius:30px;
+    font-size:13px;
+}
+
+/* BUTTON */
+
+.project-btn{
+    display:inline-block;
+    text-decoration:none;
+    background:linear-gradient(to right,#2563eb,#3b82f6);
+    color:white;
+    padding:14px 24px;
+    border-radius:12px;
+    font-weight:500;
+    transition:0.4s;
+}
+
+.project-btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 20px rgba(37,99,235,0.4);
+}
+
+/* ANIMATION */
+
+.project-card{
+    animation:fadeUp 1s ease;
+}
+
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(50px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .projects-header h1{
+        font-size:42px;
+    }
+
+    .projects-header p{
+        font-size:16px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<section class="projects-header">
+
+    <h1>Our Projects</h1>
+
+    <p>
+        Innovative startup solutions designed to transform businesses,
+        improve digital experiences, and accelerate growth through
+        technology and creativity.
+    </p>
+
+</section>
+
+<!-- PROJECTS -->
+
+<section class="projects-section">
+
+    <div class="projects-grid">
+
+        <!-- PROJECT 1 -->
+
+        <div class="project-card">
+
+            <div class="project-image">
+                <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=2070&auto=format&fit=crop">
+            </div>
+
+            <div class="project-content">
+
+                <h2>AI Analytics Platform</h2>
+
+                <p>
+                    Smart analytics dashboard powered by artificial intelligence
+                    to help businesses make faster and data-driven decisions.
+                </p>
+
+                <div class="tags">
+                    <span>AI</span>
+                    <span>Dashboard</span>
+                    <span>Analytics</span>
+                </div>
+
+                <a href="#" class="project-btn">View Project</a>
+
+            </div>
+
+        </div>
+
+        <!-- PROJECT 2 -->
+
+        <div class="project-card">
+
+            <div class="project-image">
+                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2070&auto=format&fit=crop">
+            </div>
+
+            <div class="project-content">
+
+                <h2>E-Commerce Solution</h2>
+
+                <p>
+                    Modern online shopping platform with secure payment,
+                    inventory management, and responsive user experience.
+                </p>
+
+                <div class="tags">
+                    <span>Shop</span>
+                    <span>Business</span>
+                    <span>UI/UX</span>
+                </div>
+
+                <a href="#" class="project-btn">View Project</a>
+
+            </div>
+
+        </div>
+
+        <!-- PROJECT 3 -->
+
+        <div class="project-card">
+
+            <div class="project-image">
+                <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=2070&auto=format&fit=crop">
+            </div>
+
+            <div class="project-content">
+
+                <h2>Startup CRM System</h2>
+
+                <p>
+                    Professional customer relationship management system
+                    built for startups to manage clients and workflows.
+                </p>
+
+                <div class="tags">
+                    <span>CRM</span>
+                    <span>Cloud</span>
+                    <span>Startup</span>
+                </div>
+
+                <a href="#" class="project-btn">View Project</a>
+
+            </div>
+
+        </div>
+
+        <!-- PROJECT 4 -->
+
+        <div class="project-card">
+
+            <div class="project-image">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2072&auto=format&fit=crop">
+            </div>
+
+            <div class="project-content">
+
+                <h2>Smart Mobile App</h2>
+
+                <p>
+                    Cross-platform mobile application focused on productivity,
+                    collaboration, and real-time communication.
+                </p>
+
+                <div class="tags">
+                    <span>Mobile</span>
+                    <span>App</span>
+                    <span>Technology</span>
+                </div>
+
+                <a href="#" class="project-btn">View Project</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</body>
+</html>

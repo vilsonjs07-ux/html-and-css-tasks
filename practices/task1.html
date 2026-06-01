@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    </head>
+    <body>
+        <nav class="head">
+        <nav class="left">
+            <div class="one"><i class="fa-solid fa-location-dot"></i><h3>Thadicombu</h3>
+            <p>Thadicombu road,Dindigul,624709</p></div>
+            <div class="two"><i class="fa-solid fa-phone"></i>
+                <h3>Mobile Number</h3><p>8760071661 <br>land-line 002242
+                </p></div>
+            <div class="three"><i class="fa-solid fa-microchip">
+                </i><h3>Instagram</h3><p>@vilson-js07</p></div>
+            <div class="four"><i class="fa-solid fa-envelope"></i><h3>Mail ID</h3><p>vilsonjs07@gmail.com</p></div>
+        </nav>
+        <nav class="right">
+            <h1>contact Us</h1>
+            <input type="text" placeholder="Enter your name"><br><br>
+            <input type="email" placeholder="Enter your email"><br><br>
+            <input class="feedback" type="text"><br><br>
+            <button>submit</button>
+        </nav>
+        </nav>
+    </body>
+    <style>
+        body{
+            background-color: rgb(58, 79, 91);
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            overflow: hidden;
+            
+            
+        }
+        .head{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            position: relative;
+            left: 200px;
+            top: 200px;
+        }
+        .left{
+            height: 500px;
+            width: 500px;
+            display: grid;
+            grid-template-columns: 160px 160px;
+            grid-template-rows: 160px 160px;
+            position: relative;
+            z-index: 3;
+           
+        }
+        div{
+            
+            width: 150px;
+            height: 150px;
+            background-color: rgb(250, 252, 252);
+            
+            
+        }
+        .right{
+            height: 350px;
+            width: 500px;
+            background-color: skyblue;
+            border-radius: 5px;
+            text-align: center;
+            position: relative;
+            left: -250px;
+            top: -20px;
+            z-index: 2;
+        }
+        button{
+            background-color: skyblue;
+        }
+        .feedback{
+            height: 50px;
+        }
+        input{
+            width: 250px;
+            border-radius: 5px;
+        }
+        i{
+            font-size: 30px;
+            color: rgb(2, 169, 169);
+            margin-top: 10px;
+        }
+    </style>
+</html>

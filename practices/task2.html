@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us Template</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#1f2430;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+/* Main Container */
+
+.contact-container{
+    display:flex;
+    width:850px;
+    background:#7fd6e5;
+    position:relative;
+    padding:40px;
+}
+
+/* Left Boxes */
+
+.info-section{
+    position:absolute;
+    left:-80px;
+    top:50%;
+    transform:translateY(-50%);
+    display:grid;
+    grid-template-columns:repeat(2,150px);
+    gap:15px;
+}
+
+.info-box{
+    background:#fff;
+    padding:25px 15px;
+    text-align:center;
+    box-shadow:0 5px 10px rgba(0,0,0,0.2);
+}
+
+.info-box i{
+    font-size:28px;
+    color:#7fd6e5;
+    margin-bottom:10px;
+}
+
+.info-box h3{
+    font-size:14px;
+    margin-bottom:8px;
+    color:#333;
+}
+
+.info-box p{
+    font-size:12px;
+    color:#666;
+    line-height:1.5;
+}
+
+/* Contact Form */
+
+.form-section{
+    margin-left:220px;
+    width:100%;
+}
+
+.form-section h2{
+    text-align:center;
+    margin-bottom:25px;
+    color:#111;
+}
+
+.input-box{
+    width:100%;
+    margin-bottom:15px;
+}
+
+.input-box input,
+.input-box textarea{
+    width:100%;
+    padding:12px;
+    border:none;
+    outline:none;
+    background:#dff7fb;
+    font-size:14px;
+}
+
+.input-box textarea{
+    height:100px;
+    resize:none;
+}
+
+button{
+    display:block;
+    margin:auto;
+    padding:10px 30px;
+    border:1px solid #fff;
+    background:transparent;
+    color:#fff;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#fff;
+    color:#333;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="contact-container">
+
+    <!-- Left Side Info -->
+
+    <div class="info-section">
+
+        <div class="info-box">
+            <i class="fa-solid fa-location-dot"></i>
+            <h3>OUR MAIN OFFICE</h3>
+            <p>SoHo 94 Broadway St<br>New York, NY 1001</p>
+        </div>
+
+        <div class="info-box">
+            <i class="fa-solid fa-phone"></i>
+            <h3>PHONE NUMBER</h3>
+            <p>234-9876-5400<br>888-0123-4567</p>
+        </div>
+
+        <div class="info-box">
+            <i class="fa-solid fa-fax"></i>
+            <h3>FAX</h3>
+            <p>1-234-567-8900</p>
+        </div>
+
+        <div class="info-box">
+            <i class="fa-solid fa-envelope"></i>
+            <h3>EMAIL</h3>
+            <p>hello@theme.com</p>
+        </div>
+
+    </div>
+
+    <!-- Right Side Form -->
+
+    <div class="form-section">
+
+        <h2>Contact Us</h2>
+
+        <div class="input-box">
+            <input type="text" placeholder="Enter your Name">
+        </div>
+
+        <div class="input-box">
+            <input type="email" placeholder="Enter a valid email address">
+        </div>
+
+        <div class="input-box">
+            <textarea placeholder="Enter your message"></textarea>
+        </div>
+
+        <button>SUBMIT</button>
+
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Advanced Music Player</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#121212;
+    color:white;
+    height:100vh;
+}
+
+/* MAIN LAYOUT */
+
+.container{
+    display:flex;
+    height:100vh;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+    width:240px;
+    background:#000;
+    padding:30px 20px;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:bold;
+    margin-bottom:40px;
+    color:#1db954;
+}
+
+.menu{
+    list-style:none;
+}
+
+.menu li{
+    padding:15px;
+    margin-bottom:10px;
+    border-radius:10px;
+    cursor:pointer;
+    transition:0.3s;
+    font-size:18px;
+}
+
+.menu li:hover{
+    background:#1db954;
+}
+
+/* MAIN CONTENT */
+
+.main{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+}
+
+/* TOPBAR */
+
+.topbar{
+    height:80px;
+    background:#181818;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+}
+
+.search-box input{
+    width:350px;
+    padding:12px 20px;
+    border:none;
+    border-radius:30px;
+    outline:none;
+    font-size:16px;
+}
+
+.buttons button{
+    padding:10px 20px;
+    border:none;
+    border-radius:25px;
+    margin-left:10px;
+    cursor:pointer;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.login{
+    background:#1db954;
+    color:white;
+}
+
+.logout{
+    background:white;
+    color:black;
+}
+
+.buttons button:hover{
+    transform:scale(1.05);
+}
+
+/* SONG LIST */
+
+.content{
+    padding:30px;
+    overflow-y:auto;
+}
+
+.title{
+    font-size:32px;
+    margin-bottom:25px;
+}
+
+.song-list{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.song{
+    background:#181818;
+    padding:20px;
+    border-radius:15px;
+    transition:0.3s;
+    cursor:pointer;
+}
+
+.song:hover{
+    background:#282828;
+    transform:translateY(-5px);
+}
+
+.song img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    border-radius:15px;
+}
+
+.song h3{
+    margin-top:15px;
+}
+
+.song p{
+    color:#ccc;
+    margin-top:5px;
+}
+
+/* PLAYER */
+
+.player{
+    height:100px;
+    background:#000;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:20px;
+}
+
+.song-info{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.song-info img{
+    width:60px;
+    height:60px;
+    border-radius:10px;
+}
+
+.controls button{
+    width:50px;
+    height:50px;
+    border:none;
+    border-radius:50%;
+    margin:0 10px;
+    font-size:20px;
+    cursor:pointer;
+    background:#1db954;
+    color:white;
+}
+
+audio{
+    width:300px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- SIDEBAR -->
+
+    <div class="sidebar">
+
+        <div class="logo">Music</div>
+
+        <ul class="menu">
+            <li>🏠 Home</li>
+            <li>🔍 Search</li>
+            <li>🎵 Playlist</li>
+            <li>🔔 Notification</li>
+            <li>⭐ Premium</li>
+        </ul>
+
+    </div>
+
+    <!-- MAIN SECTION -->
+
+    <div class="main">
+
+        <!-- TOP BAR -->
+
+        <div class="topbar">
+
+            <div class="search-box">
+                <input type="text" placeholder="Search songs...">
+            </div>
+
+            <div class="buttons">
+                <button class="login">Log In</button>
+                <button class="logout">Log Out</button>
+            </div>
+
+        </div>
+
+        <!-- SONG LIST -->
+
+        <div class="content">
+
+            <h1 class="title">Trending Playlist</h1>
+
+            <div class="song-list">
+
+                <!-- SONG 1 -->
+                <div class="song" onclick="playSong('song1.mp3','Night Vibes','Artist 1','https://picsum.photos/id/237/300/300')">
+                    <img src="iceboy.jpg">
+                    <h3>Night Vibes</h3>
+                    <p>Artist 1</p>
+                </div>
+
+                <!-- SONG 2 -->
+                <div class="song" onclick="playSong('song2.mp3','Dream Beat','Artist 2','https://picsum.photos/id/238/300/300')">
+                    <img src="vaari vaari.jpg">
+                    <h3>Dream Beat</h3>
+                    <p>Artist 2</p>
+                </div>
+
+                <!-- SONG 3 -->
+                <div class="song" onclick="playSong('song3.mp3','Love Tune','Artist 3','https://picsum.photos/id/239/300/300')">
+                    <img src="karuppu.jpg">
+                    <h3>Love Tune</h3>
+                    <p>Artist 3</p>
+                </div>
+
+                <!-- SONG 4 -->
+                <div class="song" onclick="playSong('song4.mp3','Rock Star','Artist 4','https://picsum.photos/id/240/300/300')">
+                    <img src="https://picsum.photos/id/240/300/300">
+                    <h3>Rock Star</h3>
+                    <p>Artist 4</p>
+                </div>
+
+                <!-- SONG 5 -->
+                <div class="song" onclick="playSong('song5.mp3','Peace Music','Artist 5','https://picsum.photos/id/241/300/300')">
+                    <img src="https://picsum.photos/id/241/300/300">
+                    <h3>Peace Music</h3>
+                    <p>Artist 5</p>
+                </div>
+
+                <!-- SONG 6 -->
+                <div class="song" onclick="playSong('song6.mp3','Moon Light','Artist 6','https://picsum.photos/id/242/300/300')">
+                    <img src="https://picsum.photos/id/242/300/300">
+                    <h3>Moon Light</h3>
+                    <p>Artist 6</p>
+                </div>
+
+                <!-- SONG 7 -->
+                <div class="song" onclick="playSong('song7.mp3','Party Time','Artist 7','https://picsum.photos/id/243/300/300')">
+                    <img src="https://picsum.photos/id/243/300/300">
+                    <h3>Party Time</h3>
+                    <p>Artist 7</p>
+                </div>
+
+                <!-- SONG 8 -->
+                <div class="song" onclick="playSong('song8.mp3','Slow Motion','Artist 8','https://picsum.photos/id/244/300/300')">
+                    <img src="https://picsum.photos/id/244/300/300">
+                    <h3>Slow Motion</h3>
+                    <p>Artist 8</p>
+                </div>
+
+                <!-- SONG 9 -->
+                <div class="song" onclick="playSong('song9.mp3','Classic Mood','Artist 9','https://picsum.photos/id/245/300/300')">
+                    <img src="https://picsum.photos/id/245/300/300">
+                    <h3>Classic Mood</h3>
+                    <p>Artist 9</p>
+                </div>
+
+                <!-- SONG 10 -->
+                <div class="song" onclick="playSong('song10.mp3','Future Bass','Artist 10','https://picsum.photos/id/246/300/300')">
+                    <img src="https://picsum.photos/id/246/300/300">
+                    <h3>Future Bass</h3>
+                    <p>Artist 10</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- MUSIC PLAYER -->
+
+        <div class="player">
+
+            <div class="song-info">
+                <img id="cover" src="https://picsum.photos/id/237/300/300">
+
+                <div>
+                    <h3 id="title">Night Vibes</h3>
+                    <p id="artist">Artist 1</p>
+                </div>
+            </div>
+
+            <div class="controls">
+                <button onclick="audio.play()">▶</button>
+                <button onclick="audio.pause()">⏸</button>
+            </div>
+
+            <audio id="audio" controls>
+                <source src="song1.mp3" type="audio/mp3">
+            </audio>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+
+let audio = document.getElementById("audio");
+
+function playSong(song,title,artist,image){
+
+    audio.src = song;
+    audio.play();
+
+    document.getElementById("title").innerText = title;
+    document.getElementById("artist").innerText = artist;
+    document.getElementById("cover").src = image;
+}
+
+</script>
+
+</body>
+</html>

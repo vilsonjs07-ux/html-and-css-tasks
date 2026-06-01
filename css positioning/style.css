@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+}
+
+
+.navbar {
+  position: sticky;
+  top: 35px;
+  background-color: #2e84e6;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar a {
+  color: rgb(247, 245, 246);
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #575757;
+}
+.content {
+  padding: 20px;
+}
+
+.box {
+  height: 1000px; 
+  background: linear-gradient(rgb(180, 207, 238));
+}
+.one{
+  background-color: rgb(159, 184, 184);
+}
+.one:hover{
+  background-color: rgb(78, 129, 78);
+}
+.two{
+  position: sticky;
+  top: 0px;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}

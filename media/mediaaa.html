@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register Form</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+        }
+
+        .container{
+            width: 400px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #2f80d1;
+        }
+
+        h1{
+            font-size: 50px;
+            margin-bottom: 30px;
+        }
+
+        label{
+            display: block;
+            font-size: 22px;
+            font-weight: bold;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+
+        input{
+            width: 100%;
+            height: 55px;
+            border: 3px solid black;
+            font-size: 20px;
+            padding-left: 10px;
+        }
+
+     
+         .btn{
+            margin-top: 40px;
+            width: 180px;
+            height: 65px;
+            background-color: #061524;
+            color: white;
+            border: none;
+            border-radius: 40px;
+            font-size: 24px;
+           
+        }
+
+        .btn:hover{
+            background-color: #1f6fbf;
+        }
+
+        /* MEDIA QUERY */
+
+        @media screen and (max-width: 468px){
+
+        
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Register</h1>
+
+        <form>
+
+            <label>First name</label>
+            <input type="text">
+
+            <label>Last name</label>
+            <input type="text">
+
+            <label>Email address</label>
+            <input type="email">
+
+            <label>Password</label>
+            <input type="password" placeholder="Must be at least 8 characters">
+
+            <button class="btn">Register</button>
+
+        </form>
+
+    </div>
+
+</body>
+</html>

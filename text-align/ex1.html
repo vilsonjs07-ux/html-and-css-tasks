@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>CSS Alignments</h1>
+        <div class="one">
+            <h3 class="left">text align</h3>
+            <h3 class="right">left align</h3>
+            <h3 class="center">center align</h3>
+
+        </div>
+        <div class="two">
+            <h3>Float align</h3>
+            <p class="three">industry lorem ipsum has been the industry</p>
+            <p>industry lorem ipsum has been the industry</p>
+
+            
+        </div>
+    </body>
+    <style>
+        .one{
+            height: 200px;
+            width: 200px;
+            border: 3px solid black;
+            line-height: 50px;
+            text-decoration: underline;
+            float: left;
+            clear: right;
+            margin: 50px;
+            background: linear-gradient(to right, #8585ec,#7a7add , rgb(228, 228, 187), rgb(247, 248, 247))
+        }
+        .left{
+            text-align: left;
+        }
+        .right{
+            text-align: right;
+        }
+        .center{
+            text-align: center;
+        }
+        .two{
+            height: 200px;
+            width: 200px;
+            border: 3px solid black;
+            float: right;
+            margin: 50px;
+            background: linear-gradient(to right, #8585ec,#7a7add , rgb(228, 228, 187), rgb(247, 248, 247))
+            
+        }   
+        .two:hover {
+            display: block;
+        }
+        .three{
+            display: none;
+        }
+        .three:hover{
+           display: block;   
+        }
+        h1{
+            text-align: center;
+            color: blueviolet;
+        }
+    </style>
+</html>
+
+

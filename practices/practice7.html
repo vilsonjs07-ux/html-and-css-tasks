@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chocolate Shop Card</title>
+
+  <style>
+    body{
+      margin:0;
+      height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      background:#f5e6d3;
+      font-family:Arial, sans-serif;
+    }
+
+    .card{
+      width:320px;
+      background:white;
+      border-radius:20px;
+      overflow:hidden;
+      box-shadow:0 4px 15px rgba(0,0,0,0.2);
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:scale(1.03);
+    }
+
+    .card img{
+      width:100%;
+      height:220px;
+      object-fit:cover;
+    }
+
+    .content{
+      padding:20px;
+      text-align:center;
+    }
+
+    .content h2{
+      margin:10px 0;
+      color:#5a2d0c;
+    }
+
+    .content p{
+      color:#666;
+      font-size:15px;
+      line-height:1.5;
+    }
+
+     .content p{
+      color:#666;
+      font-size:15px;
+      line-height:1.5;
+    } 
+    .price{
+        padding: 20px;
+    }
+    button{
+      padding:12px 25px;
+      border:none;
+      background:#5a2d0c;
+      color:white;
+      font-size:16px;
+      border-radius:30px;
+      cursor:pointer;
+      transition:0.3s;
+    }
+
+    button:hover{
+      background:#8b4513;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1511381939415-e44015466834?q=80&w=1000&auto=format&fit=crop" alt="Chocolate">
+
+    <div class="content">
+      <h2>Chocolate Delight</h2>
+
+      <p>
+        Rich and creamy handmade chocolates with premium cocoa flavor.
+      </p>
+
+      <div class="price">₹299</div>
+
+      <button>Buy Now</button>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <div></div>
+    </body>
+    <style>
+        div{
+            height: 200px;
+            width: 200px;
+            background-color: darkslateblue;
+            border-radius: 50%;
+            background-image: url(iceboy.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            
+            transform: translateX(10px);
+            animation: moveRotate 2s ease infinite alternate-reverse;
+            position: relative;
+            top: 200px;
+        }
+        @keyframes moveRotate{
+            from{
+                transform: translateX(1200px) rotate(360deg) scale(2);
+            }
+        }
+        
+    </style>
+</html>

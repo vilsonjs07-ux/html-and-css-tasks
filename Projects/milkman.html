@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The City Milkman | Fresh Farm-to-Door</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">🥛 CityMilkman</div>
+        <ul class="nav-links">
+            <li><a href="#about">Our Process</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Join the Route</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Freshness from Your Neighbors, Delivered to Your Door.</h1>
+            <p>We collect milk from local neighborhood cows and deliver it fresh across the city every morning.</p>
+            <a href="#contact" class="btn">Start Your Delivery</a>
+        
+    </header>
+
+    <section id="about" class="section">
+        <h2 class="section-title">How It Works</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>1. Local Collection</h3>
+                <p>We visit local households with cows every morning to collect high-quality, raw milk.</p>
+            </div>
+            <div class="card">
+                <h3>2. Quality Check</h3>
+                <p>Every batch is tested for purity and chilled immediately to maintain peak freshness.</p>
+            </div>
+            <div class="card">
+                <h3>3. City Delivery</h3>
+                <p>By 7:00 AM, your fresh milk is waiting on your doorstep, ready for breakfast.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Join Our Milk Route</h2>
+        <p>Whether you have milk to provide or want fresh milk delivered, let us know!</p>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <select>
+                <option value="customer">I want milk delivered</option>
+                <option value="provider">I have cows for collection</option>
+            </select>
+            <button type="submit" class="btn">Sign Up Now</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 The City Milkman. Supporting local farmers, one bottle at a time.</p>
+    </footer>
+
+</body>
+<style>
+    /* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: 500;
+}
+
+/* Hero Section */
+.hero {
+    height: 80vh;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+                url('https://images.unsplash.com/photo-1550583760-d80392be8bc4?auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+/* Common Components */
+.btn {
+    display: inline-block;
+    background: #3498db;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #2980b9;
+}
+
+.section {
+    padding: 4rem 10%;
+    text-align: center;
+}
+
+.section-title {
+    margin-bottom: 3rem;
+    font-size: 2rem;
+}
+
+/* Grid Layout */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+/* Contact Form */
+.contact-section {
+    background: #ecf0f1;
+    padding: 4rem 10%;
+    text-align: center;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 2rem auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-form input, .contact-form select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+</style>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <div class="solar-system">
+            <div class="sun"></div>
+            <div class="orbit orbit1">
+                <div class="plant plant1"> </div>
+                </div>
+            <div class="orbit orbit2">
+                <div class="plant plant2"> </div>
+            </div>
+            <div class="orbit orbit3">
+                <div class="plant plant3"> </div>
+            </div>
+            
+        </div>
+    </body>
+    <style>
+        body{
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .solor-system{
+            position: relative;
+            width: 400px;
+            height: 400px;
+
+        }
+        .sun{
+            width: 80px;
+            background-color: rgb(224, 224, 125);
+            border-radius: 50%;
+            height: 80px;
+            background:radial-gradient(circle, #e7ca09, #ec9614);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            box-shadow: 0 0 50px rgba(225, 221, 0, 0.8);
+
+        }
+    </style>
+</html>

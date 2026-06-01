@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Design</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            background: #e5e5e5;
+            
+        display: flex;
+        justify-content: center;
+           align-items: center;
+            height: 100vh;
+        }
+
+        .navbar{
+            width: 85%;
+            background: #000;
+            padding: 20px 40px;
+            border-radius: 20px;
+            display: flex;
+           
+            justify-content: space-between;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        .logo{
+            color: white;
+            font-size: 28px;
+            font-weight: bold;
+           
+        }
+        .logo:hover{
+             background-color: rgb(236, 236, 109);
+        }
+
+        .menu{
+            
+            
+            gap: 35px;
+        }
+
+        .menu a{
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        .menu a:hover{
+            color: #d9ff3f;
+        }
+
+        .contact-btn{
+            background: #d9ff3f;
+            color: black !important;
+            padding: 12px 24px;
+            border-radius: 30px;
+            font-weight: bold;
+        }
+
+        .contact-btn:hover{
+            background: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="logo">LOGO</div>
+
+        <div class="menu">
+            <a href="#">About us</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Services</a>
+            <a href="#" class="contact-btn">Contact us</a>
+        </div>
+    </div>
+
+</body>
+</html>
